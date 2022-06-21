@@ -36,28 +36,22 @@
                                             Jabatan</th>
                                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-800 uppercase tracking-wider border border-slate-600">
                                             Bidang</th>
-
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-800 uppercase tracking-wider border border-slate-600">
+                                            Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($users as $user)
-                                    <tr class="bg-white border-collapse border border-slate-500">                                        
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ $user->nip     }}</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ $user->name     }}</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                            <select class=" block w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                                                <option>Jabatan 1</option>
-                                                <option>Jabatan 2</option>
-                                            </select>
+                                    @for ($i = 0; $i < 4; $i++) <tr class="bg-white border-collapse border border-slate-500">
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">12345789</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Name</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Jabatan 1</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Bidang 1</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-3 w-10">
+                                            <a href="/admin/user/edit" class="px-5 py-2 bg-blue-500 rounded-md text-white">Edit</a>
+                                            <button class="px-5 py-2 bg-red-500 rounded-md text-white" data-id="">Delete</button>
                                         </td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                                            <select class=" block w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-                                                <option>bidang 1</option>
-                                                <option>bidang 2</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    @endforeach                                
+                                        </tr>
+                                        @endfor
                                 </tbody>
                             </table>
                             <!-- end of table -->

@@ -14,8 +14,7 @@ class BidangController extends Controller
      */
     public function index()
     {
-        $this->data['bidangs'] =Bidang::orderBy('name','asc')->paginate(10);
-        return view('admin.bidang',$this->data);
+        //
     }
 
     /**
@@ -25,7 +24,10 @@ class BidangController extends Controller
      */
     public function create()
     {
-        return view('admin.bidang-add');
+        $bidang = Bidang::create([
+            'name'=>$request->name,
+        ]);
+        return $bidang;
     }
 
     /**
@@ -36,12 +38,8 @@ class BidangController extends Controller
      */
     public function store(Request $request)
     {
-        $bidang = Bidang::create([
-            'name'=>$request->name,
-        ]);
-        return redirect('/admin/bidang');
+        //
     }
-    
 
     /**
      * Display the specified resource.

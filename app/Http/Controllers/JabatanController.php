@@ -14,8 +14,7 @@ class JabatanController extends Controller
      */
     public function index()
     {
-        $this->data['jabatans'] =Jabatan::orderBy('name','asc')->paginate(10);
-        return view('admin.jabatan',$this->data);
+        
     }
 
     /**
@@ -25,7 +24,7 @@ class JabatanController extends Controller
      */
     public function create()
     {
-        return view('admin.jabatan-add');
+        
     }
 
     /**
@@ -42,7 +41,7 @@ class JabatanController extends Controller
         $jabatan = Jabatan::create([
             'name'=>$request->name,
         ]);
-        return redirect('/admin/jabatan');
+        return $jabatan;
     }
 
     /**

@@ -24,7 +24,7 @@
                     </div>
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
                         <div class="flex justify-end pt-3">
-                            <a href="/admin/jabatan/create" class="rounded text-white bg-blue-600 px-4 py-2 m-4 mr-0">Tambah Jabatan</a>
+                            <a href="/admin/jabatan/add" class="rounded text-white bg-blue-600 px-4 py-2 m-4 mr-0">Tambah Jabatan</a>
                         </div>
                         <!-- Replace with your content -->
                         <div class="py-5">
@@ -40,12 +40,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($jabatans as $jabatan)
-                                    <tr class="bg-white border-collapse border border-slate-500">
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border border-slate-600">{{ $jabatan->id     }}</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border border-slate-600"> {{ $jabatan->name }}</td>
+                                    @for ($i = 1; $i < 3; $i++) <tr class="bg-white border-collapse border border-slate-500">
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border border-slate-600">{{ $i }}</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border border-slate-600">Jabatan {{ $i }}</td>
                                         </tr>
-                                    @endforeach
+                                        @endfor
                                 </tbody>
                             </table>
                             <!-- end of table -->

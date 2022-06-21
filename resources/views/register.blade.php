@@ -11,22 +11,21 @@
     <div class="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
             <div class="bg-white py-8 px-4 border-2 sm:rounded-lg sm:px-10">
-                <form class="space-y-6" method="POST" action="{{ route('register') }}">
-                    @csrf
+                <form class="space-y-6" action="#" method="POST">
                     <div class="sm:mx-auto sm:w-full sm:max-w-md">
                         <h2 class="mt-6 text-center text-3xl font-bold text-gray-900">Register</h2>
                     </div>
                     @csrf
                     <div>
-                        <label for="nip" class="block text-sm font-medium text-gray-700"> NIP </label>
+                        <label for="NIP" class="block text-sm font-medium text-gray-700"> NIP </label>
                         <div class="mt-1">
-                            <input id="text" name="nip" type="text" autocomplete="nip" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                            <input id="text" name="NIP" type="NIP" autocomplete="NIP" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
                         </div>
                     </div>
                     <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700"> Name </label>
+                        <label for="nama" class="block text-sm font-medium text-gray-700"> Nama </label>
                         <div class="mt-1">
-                            <input id="text" name="name" type="text" autocomplete="name" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                            <input id="text" name="nama" type="nama" autocomplete="nama" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
                         </div>
                     </div>
                     <div>
@@ -42,9 +41,9 @@
                         </div>
                     </div>
                     <div>
-                        <label for="password-confirm" class="block text-sm font-medium text-gray-700"> Confirmation Password </label>
+                        <label for="confirm_password" class="block text-sm font-medium text-gray-700"> Confirmation Password </label>
                         <div class="mt-1">
-                            <input id="password-confirm" name="password_confirmation" type="password" autocomplete="current-password-confirm" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                            <input id="confirm_password" name="confirm_password" type="password" autocomplete="current-confirm_password" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
                         </div>
                     </div>
                     <div class="flex items-end justify-end">

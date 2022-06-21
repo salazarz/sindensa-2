@@ -52,30 +52,15 @@
                                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border border-slate-600">Surat {{ $i }}</td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border border-slate-600">
                                             <div class="flex justify-center">
-                                                <span class="px-4 py-2 bg-green-500 rounded-md text-white">
-                                                    Diterima
+                                                <span class="px-4 py-2 bg-gray-700 rounded-md text-white">
+                                                    file.docx
                                                 </span>
                                             </div>
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-3 w-10">
-                                            <a href="" class="px-5 py-2 bg-blue-500 rounded-md text-white">Edit</a>
+                                            <a href="/user/acclaporan/acc" class="px-5 py-2 bg-blue-500 rounded-md text-white">Accept</a>
                                             <button class="px-5 py-2 bg-red-500 rounded-md text-white" data-id="">Delete</button>
                                         </td>
-                                        </tr>
-                                        <tr class="bg-white border-collapse border border-slate-500">
-                                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border border-slate-600">{{ $i }}</td>
-                                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border border-slate-600">Surat {{ $i }}</td>
-                                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 border border-slate-600">
-                                                <div class="flex justify-center">
-                                                    <span class="px-3 py-2 bg-yellow-500 rounded-md text-white">
-                                                        Menunggu
-                                                    </span>
-                                                </div>
-                                            </td>
-                                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-3 w-10">
-                                                <a href="" class="px-5 py-2 bg-blue-500 rounded-md text-white">Edit</a>
-                                                <button class="px-5 py-2 bg-red-500 rounded-md text-white" data-id="">Delete</button>
-                                            </td>
                                         </tr>
                                         @endfor
                                 </tbody>
